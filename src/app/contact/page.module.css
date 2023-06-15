@@ -16,6 +16,20 @@
     flex: 1;
 }
 
+.image{
+    object-fit: contain;
+    /* animation: move 2s ease alternate infinite; */
+}
+
+@keyframes move {
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(0)scale(1.02);
+    }   
+}
+
 .form{
     flex: 1;
     display: flex;
@@ -24,7 +38,25 @@
     background-color: transparent;;
 }
 
-.input, .textArea{
+.input{
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #bbb;
+    border: 3px solid #bbb;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.textArea{
     padding: 20px;
     resize: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #bbb;
+    border: 3px solid #bbb;
+    font-size: 15px;
+    font-weight: bold;
 }
