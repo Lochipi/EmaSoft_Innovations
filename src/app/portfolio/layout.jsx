@@ -4,8 +4,8 @@ import styles from './portfolio.module.css'
 function Layout({ children }) {
   return (
     <>
-      <div className={styles.mainTitle}>
-        <h1>Our Works</h1>
+      <div>
+        <h1 className={styles.mainTitle}>Our Works</h1>
       </div>
       {children}
     </>
